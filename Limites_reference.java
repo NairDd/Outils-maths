@@ -54,6 +54,8 @@ public class Limites_reference {
             }
             System.out.println("Quelle est la limite en " + lim);
             reponse = inp.nextLine();
+            System.out.print("\033[H\033[J");
+            System.out.flush();
             if(reponse.matches(bonne_rep)){
                 System.out.println("Bravo");
                 combo_bonnes_rep += 1;
