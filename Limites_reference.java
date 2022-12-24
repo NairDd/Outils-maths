@@ -13,12 +13,8 @@ public class Limites_reference {
         String reponse = "";
         int limite = 0;
         while(bonne_rep){
-
-            System.out.print("\033[H\033[J");
-            System.out.flush();
-
+            
             limite = rand.nextInt(11);
-            System.out.println("Vous avez " + combo_bonnes_rep + " bonnes réponses d'affilée");
 
             if(limite == 0){
                 System.out.println("Quelle est la limite en 0 de (ln(1+x))/x ?");
@@ -26,6 +22,7 @@ public class Limites_reference {
                 if(reponse.matches("1")){
                     System.out.println("Bravo");
                     combo_bonnes_rep += 1;
+                    System.out.println("Vous avez " + combo_bonnes_rep + " bonnes réponses d'affilée");
                 }else{
                     System.out.println("1");
                     combo_bonnes_rep = 0;
@@ -36,6 +33,7 @@ public class Limites_reference {
                 if(reponse.matches("1")){
                     System.out.println("Bravo");
                     combo_bonnes_rep += 1;
+                    System.out.println("Vous avez " + combo_bonnes_rep + " bonnes réponses d'affilée");
                 }else{
                     System.out.println("1");
                     combo_bonnes_rep = 0;
@@ -46,6 +44,7 @@ public class Limites_reference {
                 if(reponse.matches("0")){
                     System.out.println("Bravo");
                     combo_bonnes_rep += 1;
+                    System.out.println("Vous avez " + combo_bonnes_rep + " bonnes réponses d'affilée");
                 }else{
                     System.out.println("0");
                     combo_bonnes_rep = 0;
@@ -56,6 +55,7 @@ public class Limites_reference {
                 if(reponse.matches("0")){
                     System.out.println("Bravo");
                     combo_bonnes_rep += 1;
+                    System.out.println("Vous avez " + combo_bonnes_rep + " bonnes réponses d'affilée");
                 }else{
                     System.out.println("0");
                     combo_bonnes_rep = 0;
@@ -66,6 +66,7 @@ public class Limites_reference {
                 if(reponse.matches("1")){
                     System.out.println("Bravo");
                     combo_bonnes_rep += 1;
+                    System.out.println("Vous avez " + combo_bonnes_rep + " bonnes réponses d'affilée");
                 }else{
                     System.out.println("1");
                     combo_bonnes_rep = 0;
@@ -76,6 +77,7 @@ public class Limites_reference {
                 if(reponse.matches("1")){
                     System.out.println("Bravo");
                     combo_bonnes_rep += 1;
+                    System.out.println("Vous avez " + combo_bonnes_rep + " bonnes réponses d'affilée");
                 }else{
                     System.out.println("1");
                     combo_bonnes_rep = 0;
@@ -86,6 +88,7 @@ public class Limites_reference {
                 if(reponse.matches("0")){
                     System.out.println("Bravo");
                     combo_bonnes_rep += 1;
+                    System.out.println("Vous avez " + combo_bonnes_rep + " bonnes réponses d'affilée");
                 }else{
                     System.out.println("0");
                     combo_bonnes_rep = 0;
@@ -96,6 +99,7 @@ public class Limites_reference {
                 if(reponse.matches("1/2")){
                     System.out.println("Bravo");
                     combo_bonnes_rep += 1;
+                    System.out.println("Vous avez " + combo_bonnes_rep + " bonnes réponses d'affilée");
                 }else{
                     System.out.println("1/2");
                     combo_bonnes_rep = 0;
@@ -106,6 +110,7 @@ public class Limites_reference {
                 if(reponse.matches("inf")){
                     System.out.println("Bravo");
                     combo_bonnes_rep += 1;
+                    System.out.println("Vous avez " + combo_bonnes_rep + " bonnes réponses d'affilée");
                 }else{
                     System.out.println("inf");
                     combo_bonnes_rep = 0;
@@ -116,6 +121,7 @@ public class Limites_reference {
                 if(reponse.matches("1")){
                     System.out.println("Bravo");
                     combo_bonnes_rep += 1;
+                    System.out.println("Vous avez " + combo_bonnes_rep + " bonnes réponses d'affilée");
                 }else{
                     System.out.println("1");
                     combo_bonnes_rep = 0;
@@ -126,6 +132,7 @@ public class Limites_reference {
                 if(reponse.matches("0")){
                     System.out.println("Bravo");
                     combo_bonnes_rep += 1;
+                    System.out.println("Vous avez " + combo_bonnes_rep + " bonnes réponses d'affilée");
                 }else{
                     System.out.println("0");
                     combo_bonnes_rep = 0;
