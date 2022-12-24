@@ -4,15 +4,18 @@ import java.util.Random;
 public class Limites_reference {
 
     public static int combo_bonnes_rep = 0;
-
+    
 	public static void main(String[] args) {
-        Scanner inp = new Scanner(System.in);
+        Scanner clavier = new Scanner(System.in);
         Random rand = new Random();
 
         boolean boucle = true;
         String bonne_rep ="", lim = "";
         String reponse = "";
         int limite = 0;
+
+        System.out.print("\033[H\033[J");
+        System.out.flush();
 
         while(boucle){
             
@@ -53,17 +56,22 @@ public class Limites_reference {
                 lim = "-inf de x*exp(x)";
             }
             System.out.println("Quelle est la limite en " + lim);
-            reponse = inp.nextLine();
+            reponse = clavier.nextLine();
             System.out.print("\033[H\033[J");
             System.out.flush();
             if(reponse.matches(bonne_rep)){
                 System.out.println("Bravo");
                 combo_bonnes_rep += 1;
                 System.out.println("Vous avez " + combo_bonnes_rep + " bonnes réponses d'affilée");
-            }else{
+            }else if(reponse.matches("arret")){
+                boucle = false;
+            }
+            else{
                 System.out.println(bonne_rep);
                 combo_bonnes_rep = 0;
             }
         }
+        clavier.close();
+        System.exit(0);
 	}
 }
