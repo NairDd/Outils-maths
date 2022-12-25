@@ -1,36 +1,42 @@
+import java.util.Arrays;
 import java.util.Scanner;
 public class Calcul_PGCD {
     public static void main(String[] args) {
-    Scanner clavier = new Scanner(System.in);
+        Scanner clavier = new Scanner(System.in);
 
-    System.out.println("Quel est le degré du polynôme P1");
-    int deg_P1 = clavier.nextInt();
-    System.out.println("Quel est le degré du polynôme P2");
-    int deg_P2 = clavier.nextInt();
-    int deg_reste;
-    int[] P1 = new int[deg_P1];
-    int[] P2 = new int[deg_P2];
+        System.out.println("Quel est le degré du polynôme P1");
+        int degre_polynome_diviseur = clavier.nextInt() + 1;
+        System.out.println("Quel est le degré du polynôme P2");
+        int degre_polynome_dividende = clavier.nextInt() + 1;
+        int degre_quotient, deg_reste;
+        int[] polynome_diviseur = new int[degre_polynome_diviseur];
+        int[] polynome_dividende = new int[degre_polynome_dividende];
 
-    for(int i =0; i <= deg_P1; i++){
-        System.out.println("Quelle est la valeur dans P1 de x^ " + i);
-        P1[i] = clavier.nextInt();
-    }
-    for(int j =0; j <= deg_P1; j++){
-        System.out.println("Quelle est la valeur dans P2 de x^ " + j);
-        P2[j] = clavier.nextInt();
-    }
+        for(int i =0; i < degre_polynome_diviseur; i++){
+            System.out.println("Quelle est la valeur dans P1 de x^ " + i);
+            polynome_diviseur[i] = clavier.nextInt();
+        }
+        System.out.println(Arrays.toString(polynome_diviseur));
+        for(int j =0; j < degre_polynome_dividende; j++){
+            System.out.println("Quelle est la valeur dans P2 de x^ " + j);
+            polynome_dividende[j] = clavier.nextInt();
+        }
+        System.out.println(Arrays.toString(polynome_dividende));
 
-    boolean P1_diviseur;
+        if(degre_polynome_diviseur > degre_polynome_dividende){
+            int[] temp = new int[degre_polynome_diviseur];
+            temp = polynome_dividende;
+            polynome_dividende = polynome_diviseur;
+            polynome_diviseur = temp;
 
-    if(deg_P1 < deg_P2){
-        deg_reste = deg_P2 - deg_P1;
-        P1_diviseur = true;
-    }else{
-        deg_reste = deg_P1 - deg_P2;
-        P1_diviseur = false;
-    }
+            degre_quotient = degre_polynome_diviseur - degre_polynome_dividende;
+        }
 
-    int[] reste = new int[deg_reste];
+        int[] quotient = new int[degre_quotient];
+        //on a le diviseur, le dividende, et le quotient, comment trouver le reste
+        //méthode pour trouver le reste, à chaque étape 
+
+        
 
     }
 }
