@@ -36,7 +36,8 @@ public class Calcul_PGCD {
 
         int[] quotient = new int[degre_quotient];
         //on a le diviseur, le dividende, et le quotient, comment trouver le reste
-        //méthode pour trouver le reste, à chaque étape 
+        //méthode pour trouver le reste, à chaque étape on veut que quotient[x] soit égal à dividende[x]/diviseur[x]
+        //si diviseur[x] = 0 et que dividende[x] !=0 alors 
 
 
 
