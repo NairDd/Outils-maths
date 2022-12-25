@@ -8,7 +8,7 @@ public class Calcul_PGCD {
         int degre_polynome_diviseur = clavier.nextInt() + 1;
         System.out.println("Quel est le degré du polynôme P2");
         int degre_polynome_dividende = clavier.nextInt() + 1;
-        int degre_quotient, deg_reste;
+        int degre_quotient;
         int[] polynome_diviseur = new int[degre_polynome_diviseur];
         int[] polynome_dividende = new int[degre_polynome_dividende];
 
@@ -30,6 +30,8 @@ public class Calcul_PGCD {
             polynome_diviseur = temp;
 
             degre_quotient = degre_polynome_diviseur - degre_polynome_dividende;
+        }else{
+            degre_quotient = degre_polynome_dividende - degre_polynome_diviseur;
         }
 
         int[] quotient = new int[degre_quotient];
