@@ -3,9 +3,9 @@ public class Calcul_PGCD {
     public static void main(String[] args) {
     Scanner clavier = new Scanner(System.in);
 
-    System.out.println("Quel est le degré du polynôme P1");
+    System.out.println("Quel est le degré du premier polynôme");
     int deg_P1 = clavier.nextInt();
-    System.out.println("Quel est le degré du polynôme P2");
+    System.out.println("Quel est le degré du deuxième polynôme");
     int deg_P2 = clavier.nextInt();
     int deg_reste;
     int[] P1 = new int[deg_P1];
