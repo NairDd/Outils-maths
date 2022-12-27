@@ -1,0 +1,10 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Plaque_immatriculation_random {
+    
+	public static void main(String[] args) {
+        String chaine1 "", chaine2 "";
+        
+    }
+}
